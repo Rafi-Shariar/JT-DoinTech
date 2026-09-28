@@ -16,7 +16,11 @@ interface NavLinksProps {
   onItemClick?: () => void;
 }
 
-export function NavLinks({ className, itemClassName, onItemClick }: NavLinksProps) {
+export function NavLinks({
+  className,
+  itemClassName,
+  onItemClick,
+}: NavLinksProps) {
   const pathname = usePathname();
 
   return (
@@ -31,7 +35,7 @@ export function NavLinks({ className, itemClassName, onItemClick }: NavLinksProp
             className={cn(
               "text-base font-medium transition-colors hover:text-white",
               isActive ? "text-white" : "text-white/80",
-              itemClassName
+              itemClassName,
             )}
           >
             {link.name}

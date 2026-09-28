@@ -14,7 +14,6 @@ import {
 } from "@/components/ui/sheet";
 import { NavLinks } from "./navbar-links";
 
-
 export function MobileNav() {
   const [open, setOpen] = useState(false);
 

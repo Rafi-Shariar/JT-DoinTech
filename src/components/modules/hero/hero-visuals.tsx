@@ -17,7 +17,7 @@ export function HeroVisual() {
   return (
     <div className="relative mx-auto flex w-full max-w-5xl items-end justify-center">
       {/* 1. Lime Arch using the actual Figma asset (Pinned behind model) */}
-      <div className="pointer-events-none absolute bottom-0 left-1/2 z-0 w-[420px] -translate-x-1/2 sm:w-[580px] md:w-[680px] lg:w-full">
+      <div className="pointer-events-none absolute bottom-0 left-1/2 -translate-x-1/2 z-0 w-[680px] sm:w-[860px] lg:w-[1040px] flex justify-center">
         <Image
           src={ellipseImg}
           alt="Lime Arch Base"
@@ -27,7 +27,7 @@ export function HeroVisual() {
       </div>
 
       {/* 2. Central Model Wrapper */}
-      <div className="relative z-10 -mb-1 flex w-[300px] justify-center sm:w-[380px] md:w-[640px]">
+      <div className="relative z-10 -mb-1 flex w-[300px] justify-center sm:w-[380px] md:w-[420px] lg:w-[660px]">
         <Image
           src={modelImg}
           alt="Student learning"
@@ -36,17 +36,17 @@ export function HeroVisual() {
         />
 
         {/* 3. Floating Card 1: UI/UX Design (Left Shoulder) */}
-        <div className="absolute -left-10 top-20 z-20 rounded-2xl border border-black/5 bg-white px-4 py-3 text-left shadow-xl sm:-left-16 sm:top-24 sm:px-5 sm:py-3.5">
-          <p className="text-xs font-bold leading-none text-neutral-900 sm:text-sm">
+        <div className="absolute -left-10 top-20 z-20 rounded-2xl bg-white px-4 py-3 text-left sm:-left-16 sm:top-24 sm:px-5 sm:py-3.5 lg:-left-2 lg:top-26">
+          <p className="text-base font-medium leading-none text-neutral-900 sm:text-sm">
             UI/UX Design
           </p>
-          <p className="mt-1.5 whitespace-nowrap text-[10px] font-medium text-neutral-500 sm:text-[11px]">
+          <p className="mt-1.5 whitespace-nowrap text-xs text-neutral-500 sm:text-[11px]">
             200 Courses &bull; 1000+ Students
           </p>
         </div>
 
         {/* 4. Floating Card 2: Learning Progress (Right of head/shoulder) */}
-        <div className="absolute -right-8 top-24 z-20 w-40 rounded-2xl border border-black/5 bg-white p-3.5 text-left shadow-xl sm:-right-16 sm:top-28 sm:w-48 sm:p-4">
+        {/* <div className="absolute -right-8 top-24 z-20 w-40 rounded-2xl border border-black/5 bg-white p-3.5 text-left shadow-xl sm:-right-16 sm:top-28 sm:w-48 sm:p-4">
           <p className="text-[11px] font-medium text-neutral-500">
             Learning Progress
           </p>
@@ -54,10 +54,10 @@ export function HeroVisual() {
             55%
           </p>
           <Progress value={55} className="mt-2.5 h-1.5 bg-neutral-100 [&>div]:bg-secondary" />
-        </div>
+        </div> */}
 
         {/* 5. Floating Card 3: Happy Students (Bottom Left beside laptop) */}
-        <div className="absolute -left-12 bottom-6 z-20 rounded-2xl border border-black/5 bg-white px-4 py-3 text-left shadow-xl sm:-left-20">
+        {/* <div className="absolute -left-12 bottom-6 z-20 rounded-2xl border border-black/5 bg-white px-4 py-3 text-left shadow-xl sm:-left-20">
           <p className="text-xs font-bold text-neutral-900 sm:text-sm">
             Happy Students
           </p>
@@ -86,7 +86,7 @@ export function HeroVisual() {
               2K+
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
     </div>
   );

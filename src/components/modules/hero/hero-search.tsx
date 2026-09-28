@@ -17,28 +17,28 @@ export function HeroSearch() {
       </p>
 
       <form
-      onSubmit={(e) => e.preventDefault()}
-      className="mt-16 flex w-full max-w-xl items-center justify-center gap-3 px-4 sm:px-0"
-    >
-      {/* 1. Independent Capsule Input Field */}
-      <div className="flex h-12 flex-1 items-center gap-2.5 rounded-full bg-white px-5 shadow-lg transition-all focus-within:ring-2 focus-within:ring-secondary/50">
-        <Search className="size-4 shrink-0 text-neutral-400" />
-        <input
-          type="text"
-          placeholder="Course, topic, creator"
-          className="w-[461px] bg-transparent text-sm text-neutral-800 placeholder:text-neutral-400 focus:outline-none"
-        />
-      </div>
-
-      {/* 2. Standalone Search Button */}
-      <Button
-        type="submit"
-        variant="secondary"
-        className="h-12 rounded-full px-7 text-sm font-normal shadow-lg transition-transform active:scale-95"
+        onSubmit={(e) => e.preventDefault()}
+        className="mt-16 flex w-full max-w-xl items-center justify-center gap-3 px-4 sm:px-0"
       >
-        Search
-      </Button>
-    </form>
+        {/* 1. Independent Capsule Input Field */}
+        <div className="flex h-12 flex-1 items-center gap-2.5 rounded-full bg-white px-5 shadow-lg transition-all focus-within:ring-2 focus-within:ring-secondary/50">
+          <Search className="size-4 shrink-0 text-neutral-400" />
+          <input
+            type="text"
+            placeholder="Course, topic, creator"
+            className="w-[461px] bg-transparent text-sm text-neutral-800 placeholder:text-neutral-400 focus:outline-none"
+          />
+        </div>
+
+        {/* 2. Standalone Search Button */}
+        <Button
+          type="submit"
+          variant="secondary"
+          className="h-12 rounded-full px-7 text-sm font-normal shadow-lg transition-transform active:scale-95"
+        >
+          Search
+        </Button>
+      </form>
     </div>
   );
 }
