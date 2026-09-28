@@ -8,7 +8,7 @@ export default function Home() {
       <div className="relative overflow-hidden bg-primary">
         
         <div 
-          className="pointer-events-none absolute inset-0 z-0 bg-[linear-gradient(to_right,rgba(255,255,255,0.08)_1px,transparent_1px),linear-gradient(to_bottom,rgba(255,255,255,0.08)_1px,transparent_1px)]"
+          className="pointer-events-none absolute inset-0 z-0 bg-[linear-gradient(to_right,rgba(255,255,255,0.08)_2px,transparent_2px),linear-gradient(to_bottom,rgba(255,255,255,0.08)_2px,transparent_1px)]"
           style={{
             backgroundSize: "calc(100vw / 12) calc(100vw / 12)",
           }}
