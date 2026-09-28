@@ -1,5 +1,6 @@
 import CourseSection from "@/components/modules/course/course";
 import HeroBanner from "@/components/modules/hero/hero-banner";
+import LearingPaths from "@/components/modules/learning-path/learing-path";
 import Partners from "@/components/modules/partners/partners";
 import Navbar from "@/components/shared/navbar/navbar";
 
@@ -22,8 +23,9 @@ export default function Home() {
       </div>
 
       <div>
-            <Partners />
+          <Partners />
           <CourseSection/>
+          <LearingPaths/>
       </div>
     </main>
   );
