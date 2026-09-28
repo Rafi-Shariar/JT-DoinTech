@@ -2,6 +2,7 @@ import CourseSection from "@/components/modules/course/course";
 import HeroBanner from "@/components/modules/hero/hero-banner";
 import LearingPaths from "@/components/modules/learning-path/learing-path";
 import Partners from "@/components/modules/partners/partners";
+import Stats from "@/components/modules/stats/stats";
 import Navbar from "@/components/shared/navbar/navbar";
 
 export default function Home() {
@@ -18,14 +19,14 @@ export default function Home() {
         <div className="relative z-10">
           <Navbar />
           <HeroBanner />
-      
         </div>
       </div>
 
       <div>
-          <Partners />
-          <CourseSection/>
-          <LearingPaths/>
+        <Partners />
+        <CourseSection />
+        <LearingPaths />
+        <Stats />
       </div>
     </main>
   );

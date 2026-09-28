@@ -25,27 +25,18 @@ const FILTER_ROWS = [
     "Photography",
   ],
 
-  [
-    "Productivity",
-    "Web Development",
-    "Data Science",
-    "Cooking",
-  ],
+  ["Productivity", "Web Development", "Data Science", "Cooking"],
 ] as const;
-
-
 
 export default function CourseFilters() {
   const [activeCategory, setActiveCategory] = useState("Featured");
 
   const handleSelect = (category: string) => {
     setActiveCategory(category);
-  
   };
 
   return (
     <div className="mx-auto flex w-full max-w-6xl flex-col items-center gap-3.5 px-4 mt-8">
-      
       <div className="flex flex-wrap items-center justify-center gap-2.5 sm:gap-3">
         {FILTER_ROWS[0].map((category) => {
           const isActive = activeCategory === category;
@@ -58,7 +49,7 @@ export default function CourseFilters() {
                 "h-10 rounded-full px-5 text-xs sm:text-sm font-normal transition-all shadow-none border-0",
                 isActive
                   ? "bg-secondary text-foreground hover:bg-secondary/90 font-medium"
-                  : "bg-neutral-100 text-neutral-700 hover:bg-neutral-200/80 hover:text-neutral-900"
+                  : "bg-neutral-100 text-neutral-700 hover:bg-neutral-200/80 hover:text-neutral-900",
               )}
             >
               {category}
@@ -67,7 +58,6 @@ export default function CourseFilters() {
         })}
       </div>
 
-   
       <div className="flex flex-wrap items-center justify-center gap-2.5 sm:gap-3">
         {FILTER_ROWS[1].map((category) => {
           const isActive = activeCategory === category;
@@ -80,7 +70,7 @@ export default function CourseFilters() {
                 "h-10 rounded-full px-5 text-xs sm:text-sm font-normal transition-all shadow-none border-0",
                 isActive
                   ? "bg-secondary text-foreground hover:bg-secondary/90 font-medium"
-                  : "bg-neutral-100 text-neutral-700 hover:bg-neutral-200/80 hover:text-neutral-900"
+                  : "bg-neutral-100 text-neutral-700 hover:bg-neutral-200/80 hover:text-neutral-900",
               )}
             >
               {category}
@@ -89,7 +79,6 @@ export default function CourseFilters() {
         })}
       </div>
 
-     
       <div className="flex flex-wrap items-center justify-center gap-2.5 sm:gap-3">
         {FILTER_ROWS[2].map((category) => {
           const isActive = activeCategory === category;
@@ -102,7 +91,7 @@ export default function CourseFilters() {
                 "h-10 rounded-full px-5 text-xs sm:text-sm font-normal transition-all shadow-none border-0",
                 isActive
                   ? "bg-secondary text-foreground hover:bg-secondary/90 font-medium"
-                  : "bg-neutral-100 text-neutral-700 hover:bg-neutral-200/80 hover:text-neutral-900"
+                  : "bg-neutral-100 text-neutral-700 hover:bg-neutral-200/80 hover:text-neutral-900",
               )}
             >
               {category}

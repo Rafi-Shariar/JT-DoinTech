@@ -10,7 +10,7 @@ interface Props {
 
 const CourseCard = ({ course }: Props) => {
   return (
-    <div className="rounded-3xl border border-neutral-200/80 bg-white p-4">
+    <div className="rounded-3xl border border-neutral-200/80 bg-white p-4 max-w-[373px]">
       {/* 1. Thumbnail Image with Overlay Badges */}
       <div className="relative h-[195px] w-full overflow-hidden rounded-2xl">
         <Image
@@ -25,7 +25,7 @@ const CourseCard = ({ course }: Props) => {
         <div className="pointer-events-none absolute inset-x-0 bottom-0 h-20 bg-gradient-to-t from-black/40 via-black/10 to-transparent" />
 
         {/* Floating Pill Badges */}
-        <div className="absolute inset-x-3 bottom-3 flex items-center justify-between gap-1.5 text-xs font-medium text-gray-600">
+        <div className="absolute inset-x-3 bottom-3 flex items-center justify-between gap-1.5 text-[10px] font-medium text-gray-600">
           <span className="rounded-full  bg-white/30 px-3 p-1 backdrop-blur-md">
             17 Lessons
           </span>
